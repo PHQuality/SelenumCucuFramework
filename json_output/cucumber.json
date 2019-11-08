@@ -1,0 +1,70 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Testing login to the bbc site",
+        "description": "",
+        "id": "testing-login-to-the-pl-site;testing-login-to-the-bbc-site",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5845029597,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is in home page",
+            "match": {
+              "location": "LoginStepDefinition.user_is_in_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1160249296,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks Sign in",
+            "match": {
+              "location": "LoginStepDefinition.user_clicks_Sign_in()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3527539896,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter user deatils and clicks Sign-in button",
+            "match": {
+              "location": "LoginStepDefinition.user_enter_user_deatils_and_clicks_Sign_in_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80074854,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is logged in to the system",
+            "match": {
+              "location": "LoginStepDefinition.user_is_logged_in_to_the_system()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Testing Login to the PL site",
+    "description": "",
+    "id": "testing-login-to-the-pl-site",
+    "keyword": "Feature",
+    "uri": "/Users/himaliabeykoon/eclipse-workspace2/HimaliSampleBDDFramework/src/test/java/Features/login.feature"
+  }
+]
