@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
- features = "/Users/himaliabeykoon/eclipse-workspace2/HimaliSampleBDDFramework/src/test/java/Features/login.feature",//the path of feature file
+ features = "/Users/himaliabeykoon/eclipse-workspace2/HimaliSampleBDDFramework/src/test/java/Features/addToCart.feature",//the path of feature file
  glue= {"com.qa.stepDefinitions"},//path to step definition file
  format = {"pretty","html:test-output","json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml"},// to generate the different types of reporting
  monochrome = true, //display the console output in a proper readable format

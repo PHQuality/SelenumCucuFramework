@@ -4,67 +4,127 @@
     "elements": [
       {
         "line": 4,
-        "name": "Testing login to the bbc site",
+        "name": "User validate adding summer dress to shopping cart",
         "description": "",
-        "id": "testing-login-to-the-pl-site;testing-login-to-the-bbc-site",
+        "id": "validate-shopping-cart;user-validate-adding-summer-dress-to-shopping-cart",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 5845029597,
+              "duration": 18458416300,
               "status": "passed"
             },
             "line": 5,
-            "name": "user is in home page",
+            "name": "user is at the home page",
             "match": {
-              "location": "LoginStepDefinition.user_is_in_home_page()"
+              "location": "AddToCartStepDefinition.user_is_at_the_home_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1160249296,
+              "duration": 2304831576,
               "status": "passed"
             },
             "line": 6,
-            "name": "user clicks Sign in",
+            "name": "user selects Dresses tab",
             "match": {
-              "location": "LoginStepDefinition.user_clicks_Sign_in()"
+              "location": "AddToCartStepDefinition.user_selects_Dresses_tab()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 3527539896,
+              "duration": 1594540077,
               "status": "passed"
             },
             "line": 7,
-            "name": "user enter user deatils and clicks Sign-in button",
+            "name": "user selects \"Summer Dresses\"tab",
             "match": {
-              "location": "LoginStepDefinition.user_enter_user_deatils_and_clicks_Sign_in_button()"
+              "arguments": [
+                {
+                  "val": "Summer Dresses",
+                  "offset": 14
+                }
+              ],
+              "location": "AddToCartStepDefinition.user_selects_tab(String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 80074854,
+              "duration": 1789125907,
               "status": "passed"
             },
             "line": 8,
-            "name": "user is logged in to the system",
+            "name": "user selects \"1\" dress item",
             "match": {
-              "location": "LoginStepDefinition.user_is_logged_in_to_the_system()"
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 14
+                }
+              ],
+              "location": "AddToCartStepDefinition.user_selects_dress_item(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 236565434,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user clicks add to cart button",
+            "match": {
+              "location": "AddToCartStepDefinition.user_clicks_add_to_cart_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1048278548,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user clicks proceed to checkout button",
+            "match": {
+              "location": "AddToCartStepDefinition.user_clicks_proceed_to_checkout_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20165521810,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\u0027center_column\u0027]/p[2]/a[1]\"}\n  (Session info: chrome\u003d79.0.3945.130)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027Himalis-MacBook-Air.local\u0027, ip: \u0027fe80:0:0:0:cb2:452f:cde3:9709%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.14.6\u0027, java.version: \u00271.8.0_91\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir\u003d/var/folders/1q/y4gt48hd5bx28clq_12gbh880000gn/T/.com.google.Chrome.qwLTNe}, timeouts\u003d{implicit\u003d0, pageLoad\u003d300000, script\u003d30000}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dMAC, proxy\u003dProxy(), goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:54996}, acceptInsecureCerts\u003dfalse, browserVersion\u003d79.0.3945.130, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dMAC, setWindowRect\u003dtrue}]\nSession ID: fe89037e0b121a8c866c2655ecf6d47b\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\u0027center_column\u0027]/p[2]/a[1]}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy15.click(Unknown Source)\n\tat com.qa.pages.ShopCartSummaryPage.clickPraceedtoCheckoutButton(ShopCartSummaryPage.java:28)\n\tat com.qa.stepDefinitions.AddToCartStepDefinition.user_clicks_proceed_to_checkout_button_on_cart_summary_page(AddToCartStepDefinition.java:71)\n\tat ✽.And user clicks proceed to checkout button on cart summary page(/Users/himaliabeykoon/eclipse-workspace2/HimaliSampleBDDFramework/src/test/java/Features/addToCart.feature:11)\n",
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "user clicks proceed to checkout button on cart summary page",
+            "match": {
+              "location": "AddToCartStepDefinition.user_clicks_proceed_to_checkout_button_on_cart_summary_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "authenticaion page is displayed",
+            "match": {
+              "location": "AddToCartStepDefinition.authenticaion_page_is_displayed()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "Testing Login to the PL site",
+    "name": "validate Shopping cart",
     "description": "",
-    "id": "testing-login-to-the-pl-site",
+    "id": "validate-shopping-cart",
     "keyword": "Feature",
-    "uri": "/Users/himaliabeykoon/eclipse-workspace2/HimaliSampleBDDFramework/src/test/java/Features/login.feature"
+    "uri": "/Users/himaliabeykoon/eclipse-workspace2/HimaliSampleBDDFramework/src/test/java/Features/addToCart.feature"
   }
 ]

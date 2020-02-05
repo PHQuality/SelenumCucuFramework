@@ -33,12 +33,12 @@ public class LoginPage extends TestBase {
 			return driver.getTitle();
 		}
 		
-		public HomePage loginToSite() {
+		public BBCHomePage loginToSite() {
 			username.sendKeys(prop.getProperty("username"));
 		    password.sendKeys(prop.getProperty("password"));
 		    submitButton.click();
 		    
-		    return new HomePage();
+		    return new BBCHomePage();
 		}
 
 	}

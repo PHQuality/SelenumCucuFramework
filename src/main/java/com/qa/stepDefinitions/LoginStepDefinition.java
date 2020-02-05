@@ -2,7 +2,7 @@ package com.qa.stepDefinitions;
 
 import org.junit.Assert;
 import com.qa.base.TestBase;
-import com.qa.pages.HomePage;
+import com.qa.pages.BBCHomePage;
 import com.qa.pages.LoginPage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -10,7 +10,7 @@ import cucumber.api.java.en.When;
 
 public class LoginStepDefinition extends TestBase {
 	LoginPage loginPage;
-	HomePage homePage;
+	BBCHomePage homePage;
 
 	@Given("^user is in home page$")
 	public void user_is_in_home_page() {
@@ -22,7 +22,7 @@ public class LoginStepDefinition extends TestBase {
 
 	@When("^user clicks Sign in$")
 	public void user_clicks_Sign_in() {
-		homePage = new HomePage();
+		homePage = new BBCHomePage();
 		homePage.clickSignInLink();
 
 	}

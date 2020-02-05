@@ -1,9 +1,44 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="10.612894">
-<testcase classname="Testing Login to the PL site" name="Testing login to the bbc site" time="10.612894">
-<system-out><![CDATA[Given user is in home page..................................................passed
-When user clicks Sign in....................................................passed
-And user enter user deatils and clicks Sign-in button.......................passed
-Then user is logged in to the system........................................passed
-]]></system-out>
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="45.59728">
+<testcase classname="validate Shopping cart" name="User validate adding summer dress to shopping cart" time="45.59728">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id='center_column']/p[2]/a[1]&quot;}&#10;  (Session info: chrome=79.0.3945.130)&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'&#10;System info: host: 'Himalis-MacBook-Air.local', ip: 'fe80:0:0:0:cb2:452f:cde3:9709%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_91'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=/var/folders/1q/y4gt48hd5bx28clq_12gbh880000gn/T/.com.google.Chrome.qwLTNe}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:54996}, acceptInsecureCerts=false, browserVersion=79.0.3945.130, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true}]&#10;Session ID: fe89037e0b121a8c866c2655ecf6d47b&#10;*** Element info: {Using=xpath, value=//*[@id='center_column']/p[2]/a[1]}&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:361)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#10;&#9;at com.sun.proxy.$Proxy15.click(Unknown Source)&#10;&#9;at com.qa.pages.ShopCartSummaryPage.clickPraceedtoCheckoutButton(ShopCartSummaryPage.java:28)&#10;&#9;at com.qa.stepDefinitions.AddToCartStepDefinition.user_clicks_proceed_to_checkout_button_on_cart_summary_page(AddToCartStepDefinition.java:71)&#10;&#9;at ✽.And user clicks proceed to checkout button on cart summary page(/Users/himaliabeykoon/eclipse-workspace2/HimaliSampleBDDFramework/src/test/java/Features/addToCart.feature:11)&#10;"><![CDATA[Given user is at the home page..............................................passed
+When user selects Dresses tab...............................................passed
+And user selects "Summer Dresses"tab........................................passed
+And user selects "1" dress item.............................................passed
+And user clicks add to cart button..........................................passed
+And user clicks proceed to checkout button..................................passed
+And user clicks proceed to checkout button on cart summary page.............failed
+Then authenticaion page is displayed........................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='center_column']/p[2]/a[1]"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:42:44.417Z'
+System info: host: 'Himalis-MacBook-Air.local', ip: 'fe80:0:0:0:cb2:452f:cde3:9709%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_91'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=/var/folders/1q/y4gt48hd5bx28clq_12gbh880000gn/T/.com.google.Chrome.qwLTNe}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=MAC, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:54996}, acceptInsecureCerts=false, browserVersion=79.0.3945.130, browserName=chrome, javascriptEnabled=true, platformName=MAC, setWindowRect=true}]
+Session ID: fe89037e0b121a8c866c2655ecf6d47b
+*** Element info: {Using=xpath, value=//*[@id='center_column']/p[2]/a[1]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.qa.pages.ShopCartSummaryPage.clickPraceedtoCheckoutButton(ShopCartSummaryPage.java:28)
+	at com.qa.stepDefinitions.AddToCartStepDefinition.user_clicks_proceed_to_checkout_button_on_cart_summary_page(AddToCartStepDefinition.java:71)
+	at ✽.And user clicks proceed to checkout button on cart summary page(/Users/himaliabeykoon/eclipse-workspace2/HimaliSampleBDDFramework/src/test/java/Features/addToCart.feature:11)
+]]></failure>
 </testcase>
 </testsuite>
